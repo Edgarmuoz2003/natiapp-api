@@ -1,2 +1,91 @@
-node_modules
+############################
+# 1. Node
+############################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+############################
+# 2. Environment variables
+############################
 .env
+.env.*
+!.env.example
+
+############################
+# 3. Logs
+############################
+logs/
+*.log
+
+############################
+# 4. Build / Output
+############################
+dist/
+build/
+coverage/
+
+# Seeders temporales o dumps
+dump.sql
+
+############################
+# 6. GraphQL
+############################
+# Schema generado automáticamente
+schema.gql
+schema.graphql
+
+# Codegen outputs (si usas graphql-codegen)
+generated/
+graphql-types.ts
+
+############################
+# 7. Docker
+############################
+docker-compose.override.yml
+.env.docker
+
+############################
+# 8. IDE / Editor
+############################
+.vscode/
+.idea/
+*.swp
+*.swo
+
+############################
+# 9. OS Files
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# 10. Tests
+############################
+coverage/
+.nyc_output/
+
+############################
+# 11. Temporary files
+############################
+tmp/
+temp/
+
+############################
+# 12. PM2
+############################
+pids/
+*.pid
+*.pid.lock
+
+############################
+# 13. TypeScript (si aplicara)
+############################
+*.tsbuildinfo
+
+############################
+# 14. Misc
+############################
+uploads/
